@@ -1,0 +1,19 @@
+dvd;d1;Fight Club;2006;5;dvd.png;David Fincher;119;English;!a!
+dvd;d2;Fight Club;2006;5;dvd.png;David Fincher;119;English;!a!
+dvd;d3;Fight Club;2006;5;dvd.png;David Fincher;119;English;!a!
+dvd;d4;Fight Club;2006;5;dvd.png;David Fincher;119;English;!a!
+dvd;d5;Fight Club;2006;5;dvd.png;David Fincher;119;English;!a!
+laptop;l6;Maccy Pro;2018;1;laptopicon.png;Apple;OS-X;4k Screen;!a!
+laptop;l7;Razer Blade;2018;3;laptopicon.png;Razer;Windows;Stealth;!a!
+laptop;l8;Razer Blade;2018;3;laptopicon.png;Razer;Windows;Stealth;!a!
+laptop;l9;Razer Blade;2018;3;laptopicon.png;Razer;Windows;Stealth;!a!
+book;b10;Ready Player One;2011;6;book.png;Ernest Cline;Sci-Fi;963906;!a!
+book;b11;Ready Player One;2011;6;book.png;Ernest Cline;Sci-Fi;963906;!a!
+book;b12;Ready Player One;2011;6;book.png;Ernest Cline;Sci-Fi;963906;!a!
+book;b13;Ready Player One;2011;6;book.png;Ernest Cline;Sci-Fi;963906;!a!
+book;b14;Ready Player One;2011;6;book.png;Ernest Cline;Sci-Fi;963906;!a!
+book;b15;Ready Player One;2011;6;book.png;Ernest Cline;Sci-Fi;963906;!a!
+book;b16;Harry Potter ;2001;4;book.png;J.K Rowling;Fantasy;000001;!a!
+book;b17;Harry Potter ;2001;4;book.png;J.K Rowling;Fantasy;000001;!a!
+book;b28;Harry Potter ;2001;4;book.png;J.K Rowling;Fantasy;000001;!a!
+book;b19;Harry Potter ;2001;4;book.png;J.K Rowling;Fantasy;000001;!a!

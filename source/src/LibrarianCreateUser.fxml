@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LibrarianCreateUserController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="75.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/SwanUniDarkBlueSmol.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="75.0" fitWidth="100.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/SideBarImage.png" />
+               </image>
+            </ImageView>
+            <Label text="User Form">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="75.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/SideBarImage.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="75.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/SwanUniDarkBlueSmol.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#11c1e4" height="600.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="50.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#11c1e4" height="600.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="50.0" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#11c1e4" height="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="480.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="40.0">
+               <children>
+                  <Label prefHeight="25.0" text="Username:" />
+                  <Label prefHeight="25.0" text="First name:" />
+                  <Label prefHeight="25.0" text="Last name:" />
+                  <Label prefHeight="25.0" text="UK phone number:" />
+                  <Label prefHeight="25.0" text="Address Line 1:" />
+                  <Label prefHeight="25.0" text="Address Line 2:" />
+                  <Label prefHeight="25.0" text="Postcode:" />
+                  <Label prefHeight="25.0" text="Employment Date:" />
+                  <Label prefHeight="25.0" text="Staff Number:" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="40.0">
+               <children>
+                  <TextField fx:id="usernameInput" />
+                  <TextField fx:id="firstNameInput" />
+                  <TextField fx:id="lastNameInput" />
+                  <TextField fx:id="phoneNumberInput" />
+                  <TextField fx:id="addLn1Input" />
+                  <TextField fx:id="addLn2Input" />
+                  <TextField fx:id="postcodeInput" />
+                  <TextField fx:id="empDateInput" />
+                  <TextField fx:id="staffNumInput" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" spacing="100.0">
+               <children>
+                  <Button fx:id="createUserButton" mnemonicParsing="false" onAction="#handleCreateUserEvent" text="Create" />
+                  <Button fx:id="userFormReturnButton" mnemonicParsing="false" onAction="#handleUserFormReturnEvent" text="Return" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,5 @@
+book;Harry Potter ;2001;4;book.png;J.K Rowling;Fantasy;000001
+dvd;Fight Club;2006;5;dvd.png;David Fincher;119;English
+laptop;Maccy Pro;2018;1;laptopicon.png;Apple;OS-X;4k Screen
+laptop;Razer Blade;2018;3;laptopicon.png;Razer;Windows;Stealth
+book;Ready Player One;2011;6;book.png;Ernest Cline;Sci-Fi;963906
