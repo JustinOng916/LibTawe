@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserTransactionHistoryController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="125.0" prefWidth="600.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="200.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/SideBarImage.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/SwanUniDarkBlueSmol.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/SideBarImage.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <GridPane alignment="CENTER" gridLinesVisible="true" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="15.0" minHeight="15.0" prefHeight="15.0" vgrow="NEVER" />
+          <RowConstraints maxHeight="240.0" minHeight="10.0" prefHeight="240.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Payment Amount" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Label text="Date | Time" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" GridPane.rowIndex="1">
+               <children>
+                  <ScrollPane>
+                     <content>
+                        <VBox fx:id="paymentList" prefHeight="240.0" prefWidth="146.0" spacing="5.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <ScrollPane>
+                     <content>
+                        <VBox fx:id="dateAndTimeList" prefHeight="240.0" prefWidth="188.0" spacing="5.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </center>
+   <bottom>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#11c1e4" height="26.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <left>
+      <VBox alignment="BOTTOM_CENTER" prefWidth="75.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backTransactionButton" mnemonicParsing="false" onAction="#handleReturnTransactionEvent" text="Return" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </left>
+</BorderPane>
