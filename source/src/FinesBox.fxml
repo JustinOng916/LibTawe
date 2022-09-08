@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finesController">
+   <top>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#11c1e4" height="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#11c1e4" height="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="300.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <left>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#11c1e4" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#11c1e4" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="20.0" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="75.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/SideBarImage.png" />
+               </image>
+            </ImageView>
+            <Label text="Current fine : " />
+            <Label fx:id="userFine" text="£0.00" />
+            <ImageView fitHeight="50.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/SideBarImage.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
